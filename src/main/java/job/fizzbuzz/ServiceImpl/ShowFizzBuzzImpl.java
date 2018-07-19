@@ -6,8 +6,8 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class ShowFizzBuzzImpl implements ShowFizzBuzz {
-    private static FindFizzBuzzAtStage1Impl FindResultAtStage1=null;
-    private static FindFizzBuzzAtStage2Impl FindResultAtStage2=null;
+    FindFizzBuzzAtStage1Impl FindResultAtStage1=FindFizzBuzzAtStage1Impl.getInstance();
+    FindFizzBuzzAtStage2Impl FindResultAtStage2=FindFizzBuzzAtStage2Impl.getInstance();
     public String Show(int stage,int n) {
         StringBuilder outPutString = new StringBuilder("Output:<br/>");
         switch (stage) {
@@ -18,7 +18,6 @@ public class ShowFizzBuzzImpl implements ShowFizzBuzz {
                 break;
             case 2:
                 for (int i = 1; i <= n; ++i) {
-                    FindResultAtStage2=new FindFizzBuzzAtStage2Impl();
                     outPutString.append(FindResultAtStage2.Find(i) + "</br>");
                 }
                 break;

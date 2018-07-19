@@ -14,15 +14,15 @@ import static org.junit.Assert.assertEquals;
 @SpringBootTest
 public class FizzbuzzApplicationTests {
 
-    private final FindFizzBuzzAtStage1Impl findFizzBuzzAtStage1 = new FindFizzBuzzAtStage1Impl();
-    private final FindFizzBuzzAtStage2Impl findFizzBuzzAtStage2 = new FindFizzBuzzAtStage2Impl();
+    FindFizzBuzzAtStage1Impl FindFizzBuzzAtStage1=FindFizzBuzzAtStage1Impl.getInstance();
+    FindFizzBuzzAtStage2Impl FindFizzBuzzAtStage2=FindFizzBuzzAtStage2Impl.getInstance();
 
     /***
      *stage1中的方法,输入4，应当返回4
      */
     @Test
     public void Stage1ItShouldReturnTheGivenNumberOf4() {
-        assertEquals("4", findFizzBuzzAtStage1.Find(4));
+        assertEquals("4", FindFizzBuzzAtStage1.Find(4));
     }
 
     /***
@@ -30,7 +30,7 @@ public class FizzbuzzApplicationTests {
      */
     @Test
     public void Stage1ItShouldReturnFizzWhenTheGivenNumberIsAMultipleOf6() {
-        assertEquals("Fizz", findFizzBuzzAtStage1.Find(6));
+        assertEquals("Fizz", FindFizzBuzzAtStage1.Find(6));
     }
 
     /***
@@ -38,7 +38,7 @@ public class FizzbuzzApplicationTests {
      */
     @Test
     public void Stage1ItShouldReturnBuzzWhenTheGivenNumberIsAMultipleOf10() {
-        assertEquals("Buzz", findFizzBuzzAtStage1.Find(10));
+        assertEquals("Buzz", FindFizzBuzzAtStage1.Find(10));
     }
 
     /***
@@ -46,7 +46,7 @@ public class FizzbuzzApplicationTests {
      */
     @Test
     public void Stage1ItShouldReturnFizzBuzzWhenTheGivenNumberIsAMultipleOf3And5() {
-        assertEquals("FizzBuzz", findFizzBuzzAtStage1.Find(15));
+        assertEquals("FizzBuzz", FindFizzBuzzAtStage1.Find(15));
     }
 
     /***
@@ -54,7 +54,7 @@ public class FizzbuzzApplicationTests {
      */
     @Test
     public void Stage2ItShouldReturnTheGivenNumberOf7() {
-        assertEquals("7", findFizzBuzzAtStage2.Find(7));
+        assertEquals("7", FindFizzBuzzAtStage2.Find(7));
     }
 
     /***
@@ -62,7 +62,7 @@ public class FizzbuzzApplicationTests {
      */
     @Test
     public void Stage2ItShouldReturnFizzWhenTheGivenNumberIsAMultipleOf9() {
-        assertEquals("Fizz", findFizzBuzzAtStage2.Find(9));
+        assertEquals("Fizz", FindFizzBuzzAtStage2.Find(9));
     }
 
     /***
@@ -70,7 +70,7 @@ public class FizzbuzzApplicationTests {
      */
     @Test
     public void Stage2ItShouldReturnBuzzWhenTheGivenNumberIsAMultipleOf20() {
-        assertEquals("Buzz", findFizzBuzzAtStage2.Find(20));
+        assertEquals("Buzz", FindFizzBuzzAtStage2.Find(20));
     }
 
     /***
@@ -78,7 +78,7 @@ public class FizzbuzzApplicationTests {
      */
     @Test
     public void Stage2ItShouldReturnFizzBuzzWhenTheGivenNumberIsAMultipleOf3And5() {
-        assertEquals("FizzBuzz", findFizzBuzzAtStage2.Find(15));
+        assertEquals("FizzBuzz", FindFizzBuzzAtStage2.Find(15));
     }
 
     /***
@@ -86,7 +86,7 @@ public class FizzbuzzApplicationTests {
      */
     @Test
     public void Stage2ItShouldReturnFizzBuzzWhenTheGivenNumberIsAMultipleOf3AndHasA5InIt() {
-        assertEquals("FizzBuzz", findFizzBuzzAtStage2.Find(51));
+        assertEquals("FizzBuzz", FindFizzBuzzAtStage2.Find(51));
     }
 
     /***
@@ -94,7 +94,7 @@ public class FizzbuzzApplicationTests {
      */
     @Test
     public void Stage2ItShouldReturnFizzBuzzWhenTheGivenNumberIsAMultipleOf5AndHasA3InIt() {
-        assertEquals("FizzBuzz", findFizzBuzzAtStage2.Find(35));
+        assertEquals("FizzBuzz", FindFizzBuzzAtStage2.Find(35));
     }
 
     /***
@@ -102,6 +102,6 @@ public class FizzbuzzApplicationTests {
      */
     @Test
     public void Stage2ItShouldReturnFizzBuzzWhenTheGivenNumberHasA5InItAndHasA3InIt() {
-        assertEquals("FizzBuzz", findFizzBuzzAtStage2.Find(53));
+        assertEquals("FizzBuzz", FindFizzBuzzAtStage2.Find(53));
     }
 }
