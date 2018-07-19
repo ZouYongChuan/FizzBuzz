@@ -2,7 +2,7 @@ package job.fizzbuzz;
 
 import job.fizzbuzz.ServiceImpl.FindFizzBuzzAtStage1Impl;
 import job.fizzbuzz.ServiceImpl.FindFizzBuzzAtStage2Impl;
-import job.fizzbuzz.ServiceImpl.FizzBuzzImpl;
+import job.fizzbuzz.ServiceImpl.ShowFizzBuzzImpl;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
