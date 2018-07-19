@@ -1,6 +1,6 @@
 package job.fizzbuzz.Controller;
 
-import job.fizzbuzz.ServiceImpl.FizzBuzzImpl;
+import job.fizzbuzz.ServiceImpl.ShowFizzBuzzImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.context.annotation.ComponentScan;
@@ -12,10 +12,10 @@ import org.springframework.web.bind.annotation.RestController;
 @EnableAutoConfiguration
 @ComponentScan
 public class FizzBuzzController {
-    private final FizzBuzzImpl fizzBuzz;
+    private final ShowFizzBuzzImpl fizzBuzz;
 
     @Autowired
-    public FizzBuzzController(FizzBuzzImpl fizzBuzz) {
+    public FizzBuzzController(ShowFizzBuzzImpl fizzBuzz) {
         this.fizzBuzz = fizzBuzz;
     }
 

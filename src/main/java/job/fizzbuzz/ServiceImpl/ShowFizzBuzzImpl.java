@@ -1,10 +1,11 @@
 package job.fizzbuzz.ServiceImpl;
+import job.fizzbuzz.Service.ShowFizzBuzz;
 import job.fizzbuzz.ServiceImpl.FindFizzBuzzAtStage1Impl;
 import job.fizzbuzz.ServiceImpl.FindFizzBuzzAtStage2Impl;
 import org.springframework.stereotype.Component;
 
 @Component
-public class FizzBuzzImpl {
+public class ShowFizzBuzzImpl implements ShowFizzBuzz {
     public String Show(int stage,int n) {
         StringBuilder outPutString = new StringBuilder("Output:<br/>");
         switch (stage) {
