@@ -1,5 +1,8 @@
 package job.fizzbuzz.Service;
 
+/***
+ * 显示单个结果的接口
+ */
 public interface FindFizzBuzz {
-    public String Find(int i) ;
+    public String find(int i) ;
 }

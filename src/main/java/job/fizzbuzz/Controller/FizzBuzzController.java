@@ -27,6 +27,6 @@ public class FizzBuzzController {
      */
     @RequestMapping("/fizzbuzz/{stage}/{number}")
     public String FindFizzBuzzWithStageAndNum(@PathVariable("stage") int stage, @PathVariable("number") int number) {
-        return fizzBuzz.Show(stage,number);
+        return fizzBuzz.show(stage,number);
     }
 }
