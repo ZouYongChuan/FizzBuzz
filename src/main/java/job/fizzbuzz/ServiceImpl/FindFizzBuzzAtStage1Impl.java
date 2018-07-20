@@ -20,6 +20,7 @@ public class FindFizzBuzzAtStage1Impl implements FindFizzBuzz {
         return Holder.instance;
     }
 
+    @Override
     public String find(int i) {
         if (i % 3 == 0) {
             if (i % 5 == 0)
