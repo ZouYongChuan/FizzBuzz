@@ -9,9 +9,10 @@ import org.springframework.stereotype.Component;
  */
 @Component
 public class ShowFizzBuzzImpl implements ShowFizzBuzz {
-    FindFizzBuzzAtStage1Impl findResultAtStage1=FindFizzBuzzAtStage1Impl.getInstance();
-    FindFizzBuzzAtStage2Impl findResultAtStage2=FindFizzBuzzAtStage2Impl.getInstance();
-    public String show(int stage,int n) {
+    FindFizzBuzzAtStage1Impl findResultAtStage1 = FindFizzBuzzAtStage1Impl.getInstance();
+    FindFizzBuzzAtStage2Impl findResultAtStage2 = FindFizzBuzzAtStage2Impl.getInstance();
+
+    public String show(int stage, int n) {
         StringBuilder outPutString = new StringBuilder("Output:<br/>");
         switch (stage) {
             case 1:
