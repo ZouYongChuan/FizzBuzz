@@ -1,6 +1,7 @@
-package job.fizzbuzz.Service;
+package job.fizzbuzz.service;
 
 /***
+ * @author zou
  * 显示单个结果的接口
  */
 public interface FindFizzBuzz {

@@ -1,9 +1,10 @@
-package job.fizzbuzz.ServiceImpl;
+package job.fizzbuzz.serviceimpl;
 
-import job.fizzbuzz.Service.FindFizzBuzz;
+import job.fizzbuzz.service.FindFizzBuzz;
 import org.springframework.stereotype.Service;
 
 /***s
+ * @author zou
  * 实现Stage2显示单个结果的接口
  */
 @Service

@@ -1,8 +1,7 @@
 package job.fizzbuzz;
 
-import job.fizzbuzz.ServiceImpl.FindFizzBuzzAtStage1Impl;
-import job.fizzbuzz.ServiceImpl.FindFizzBuzzAtStage2Impl;
-import job.fizzbuzz.ServiceImpl.ShowFizzBuzzImpl;
+import job.fizzbuzz.serviceimpl.FindFizzBuzzAtStage1Impl;
+import job.fizzbuzz.serviceimpl.FindFizzBuzzAtStage2Impl;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -18,6 +17,7 @@ public class FizzbuzzApplicationTests {
     FindFizzBuzzAtStage2Impl FindFizzBuzzAtStage2=FindFizzBuzzAtStage2Impl.getInstance();
 
     /***
+     * @author zou
      *stage1中的方法,输入4，应当返回4
      */
     @Test
@@ -26,6 +26,7 @@ public class FizzbuzzApplicationTests {
     }
 
     /***
+     * @author zou
      *stage1中的方法,输入6，应当返回Fizz
      */
     @Test
@@ -34,6 +35,7 @@ public class FizzbuzzApplicationTests {
     }
 
     /***
+     * @author zou
      *stage1中的方法,输入10，应当返回Buzz
      */
     @Test
@@ -42,6 +44,7 @@ public class FizzbuzzApplicationTests {
     }
 
     /***
+     * @author zou
      *stage1中的方法,输入15，应当返回FizzBuzz
      */
     @Test
@@ -50,6 +53,7 @@ public class FizzbuzzApplicationTests {
     }
 
     /***
+     * @author zou
      *stage2中的方法,输入7，应当返回7
      */
     @Test
@@ -58,6 +62,7 @@ public class FizzbuzzApplicationTests {
     }
 
     /***
+     * @author zou
      *stage2中的方法,输入9，应当返回Fizz
      */
     @Test
@@ -66,6 +71,7 @@ public class FizzbuzzApplicationTests {
     }
 
     /***
+     * @author zou
      *stage2中的方法,输入20，应当返回Buzz
      */
     @Test
@@ -74,6 +80,7 @@ public class FizzbuzzApplicationTests {
     }
 
     /***
+     * @author zou
      *stage2中的方法,输入15，应当返回FizzBuzz
      */
     @Test
@@ -82,6 +89,7 @@ public class FizzbuzzApplicationTests {
     }
 
     /***
+     * @author zou
      *stage2中的方法,输入51，应当返回FizzBuzz
      */
     @Test
@@ -90,6 +98,7 @@ public class FizzbuzzApplicationTests {
     }
 
     /***
+     * @author zou
      *stage2中的方法,输入35，应当返回FizzBuzz
      */
     @Test
@@ -98,6 +107,7 @@ public class FizzbuzzApplicationTests {
     }
 
     /***
+     * @author zou
      *stage2中的方法,输入53，应当返回FizzBuzz
      */
     @Test

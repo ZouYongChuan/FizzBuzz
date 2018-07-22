@@ -1,12 +1,11 @@
-package job.fizzbuzz.Controller;
+package job.fizzbuzz.controller;
 
-import job.fizzbuzz.ServiceImpl.ShowFizzBuzzImpl;
+import job.fizzbuzz.serviceimpl.ShowFizzBuzzImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -21,6 +20,7 @@ public class FizzBuzzController {
     }
 
     /***
+     * @author zou
      * 查找FizzBuzz结果
      * @param stage stage输入1或者2用于判断使用stage1还是stage2,其他默认使用stage1
      * @param number number用于判断fizzbuzz的数字到多少

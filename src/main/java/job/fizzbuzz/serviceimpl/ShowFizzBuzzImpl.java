@@ -1,10 +1,9 @@
-package job.fizzbuzz.ServiceImpl;
-import job.fizzbuzz.Service.ShowFizzBuzz;
-import job.fizzbuzz.ServiceImpl.FindFizzBuzzAtStage1Impl;
-import job.fizzbuzz.ServiceImpl.FindFizzBuzzAtStage2Impl;
+package job.fizzbuzz.serviceimpl;
+import job.fizzbuzz.service.ShowFizzBuzz;
 import org.springframework.stereotype.Component;
 
 /***
+ * @author zou
  * 实现Stage1跟Stage2显示全部结果的接口
  */
 @Component
@@ -12,6 +11,7 @@ public class ShowFizzBuzzImpl implements ShowFizzBuzz {
     FindFizzBuzzAtStage1Impl findResultAtStage1 = FindFizzBuzzAtStage1Impl.getInstance();
     FindFizzBuzzAtStage2Impl findResultAtStage2 = FindFizzBuzzAtStage2Impl.getInstance();
 
+    @Override
     public String show(int stage, int n) {
         StringBuilder outPutString = new StringBuilder("Output:<br/>");
         switch (stage) {
